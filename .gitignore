@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Uploaded and output temporary Excel files
+uploads/*
+outputs/*
+!.gitkeep
+
+# Byte-compiled / Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables & secrets
+.env
+credentials.json
+*.secret
