@@ -1,0 +1,67 @@
+('C:\\Users\\Lenovo\\Documents\\python '
+ 'workplace\\consumedparts\\build\\app\\app.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\build\\app\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\Lenovo\\Documents\\python '
+   'workplace\\consumedparts\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('app',
+   'C:\\Users\\Lenovo\\Documents\\python workplace\\consumedparts\\app.py',
+   'PYSOURCE')],
+ 'python314.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

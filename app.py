@@ -1,14 +1,27 @@
+import sys
 import os
+import threading
+import webbrowser
 from flask import Flask, render_template, request, send_file, flash, redirect, url_for
 from werkzeug.utils import secure_filename
 import openpyxl
 from openpyxl.styles import PatternFill
 
-app = Flask(__name__)
+# Handle paths whether running as script or frozen .exe
+if getattr(sys, 'frozen', False):
+    # PyInstaller temporary folder for templates
+    template_dir = os.path.join(sys._MEIPASS, 'templates')
+    app = Flask(__name__, template_folder=template_dir)
+    # Base dir next to the .exe for uploads/outputs
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    app = Flask(__name__)
+    BASE_DIR = os.path.dirname(__file__)
+
 app.secret_key = 'super-secret-key'
 
-UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__), 'uploads')
-OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), 'outputs')
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
+OUTPUT_FOLDER = os.path.join(BASE_DIR, 'outputs')
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -110,5 +123,12 @@ def download_file(filename):
 
     return response
 
+def open_browser():
+    webbrowser.open("http://127.0.0.1:5000")
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Automatically open the browser 1 second after starting the server
+    threading.Timer(1.0, open_browser).start()
+    
+    # Run Flask app (debug=False is recommended for built executables)
+    app.run(debug=False, port=5000)
